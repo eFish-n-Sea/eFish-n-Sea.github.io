@@ -1,0 +1,18 @@
+body{
+    background-color: aqua;
+}
+h1{
+    border-width: 5px;
+    border-color: aquamarine;
+    border-style: outset;
+    width: 200px;
+    text-align: center;
+    background-color: aquamarine;
+}
+.inefficencty{
+    float: left;
+    width:250px;
+    background-color: bisque;
+    text-align: center
+    
+}
