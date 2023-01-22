@@ -1,5 +1,10 @@
 body{
-    background-color: rgb(0, 195, 195);
+    background-image: url("images/Background.png");
+}
+#gamesHost{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 h1{
     border-width: 5px;
@@ -8,14 +13,31 @@ h1{
     width: 200px;
     text-align: center;
     background-color: aquamarine;
+    font-family: "lucida console";
 }
-.inefficencty{
+.inefficiency{
     float: left;
     width:250px;
-    background-color: #ccbdad;
-    text-align: center
+     text-align: center;
+    /*display: flex; */
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    
+    
     
 }
 #unity-container{
-    margin-top: 75px;
+    margin-top: 100px;
+}
+a{
+   color: aliceblue;
+   text-decoration: solid;
+   font-family: "lucida console";
+}
+p{
+    color:aliceblue;
+}
+h3{
+    color:aliceblue;
 }
