@@ -14,6 +14,7 @@ h1{
     text-align: center;
     background-color: aquamarine;
     font-family: "lucida console";
+    border-radius: 10px;
 }
 .inefficiency{
     float: left;
@@ -40,4 +41,10 @@ p{
 }
 h3{
     color:aliceblue;
+}
+img{
+    border-radius: 10px;
+    border-style: outset;
+    border-color:darkcyan;
+    border-width: 5px;
 }
