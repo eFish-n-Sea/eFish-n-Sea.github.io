@@ -26,12 +26,11 @@ public class shell_behavior : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col){
         if (dirtiness > 0){
-            dirtiness--;
-            // clean();
+            clean();
         }
-        // if (dirtiness == 0){
-        //     sparkle();
-        // }
+        if (dirtiness == 0){
+            sparkle();
+        }
     }
 
     void OnMouseDown(){
@@ -40,13 +39,13 @@ public class shell_behavior : MonoBehaviour
         }
     }
 
-    // void clean(){
+    void clean(){
+        dirtiness--;
+    }
 
-    // }
-
-    // void sparkle(){
-    //     sparkling = true;
-    // }
+    void sparkle(){
+        sparkling = true;
+    }
 
     void collect(){
         collected = true;
