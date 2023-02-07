@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Shell
+  - Catfish
   layers:
   - Default
   - TransparentFX
@@ -40,4 +42,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Shells
+    uniqueID: 1559686023
+    locked: 0
+  - name: Bag
+    uniqueID: 2886956921
+    locked: 0
+  - name: Catfish
+    uniqueID: 3838239441
     locked: 0
