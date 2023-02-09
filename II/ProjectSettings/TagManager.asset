@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Shell
   - Catfish
+  - Bag
   layers:
   - Default
   - TransparentFX

@@ -5,16 +5,21 @@ using UnityEngine;
 public class shell_behavior : MonoBehaviour
 {
     public float redOffset, blueOffset, brightnessOffset;
+    public float moveSpeed;
     public int dirtiness;
     public bool sparkling;
     public bool collected;
+    GameObject bag;
     SpriteRenderer sprite;
+    Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start(){
         sparkling = false;
         collected = false;
+        bag = GameObject.FindWithTag("Bag");
         sprite = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update(){
@@ -25,11 +30,17 @@ public class shell_behavior : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D col){
-        if (dirtiness > 0){
-            clean();
+        if (col.tag == "Catfish"){
+            if (dirtiness > 0){
+                clean();
+            }
+            if (dirtiness == 0){
+                sparkle();
+            }
         }
-        if (dirtiness == 0){
-            sparkle();
+        else if (col.tag == "Bag"){
+            sprite.enabled = false;
+            rb.velocity = new Vector2(0, 0);
         }
     }
 
@@ -48,6 +59,17 @@ public class shell_behavior : MonoBehaviour
     }
 
     void collect(){
-        collected = true;
+        if (!collected){
+            collected = true;
+            float shellX = transform.position.x;
+            float shellY = transform.position.y;
+            float bagX = bag.transform.position.x;
+            float bagY = bag.transform.position.y;
+            float disX = bagX - shellX;
+            float disY = bagY - shellY;
+            float moveDis = (float) System.Math.Sqrt(disX*disX + disY*disY);
+            float ratio = moveSpeed/moveDis;
+            rb.velocity = new Vector2(ratio * disX, ratio * disY);
+        }
     }
 }
