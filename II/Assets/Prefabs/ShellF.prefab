@@ -128,7 +128,7 @@ MonoBehaviour:
   redOffset: 30
   blueOffset: 15
   brightnessOffset: 35
-  moveSpeed: 7
+  moveSpeed: 12
   dirtiness: 0
   sparkling: 0
   collected: 0

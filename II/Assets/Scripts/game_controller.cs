@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class game_controller : MonoBehaviour
 {
+    public int collectedShells;
     public GameObject[] prefabShells;
     public int shellsPerRow;
     public float genStartX, genStartY, genSpaceX, genSpaceY;
@@ -16,9 +17,9 @@ public class game_controller : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void Update(){
+        if (collectedShells == 20)
+            win();
     }
 
     void generateShells(){
@@ -50,5 +51,11 @@ public class game_controller : MonoBehaviour
                 x += genSpaceX;
             }
         }
+    }
+
+    void win(){
+        GameObject.FindWithTag("Results").GetComponent<results>().win();
+        GameObject.FindWithTag("Catfish").GetComponent<catfish_behavior>().speed = 0;
+        GameObject.FindWithTag("Timer").GetComponent<timer>().win();
     }
 }

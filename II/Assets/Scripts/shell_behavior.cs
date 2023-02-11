@@ -10,6 +10,7 @@ public class shell_behavior : MonoBehaviour
     public bool sparkling;
     public bool collected;
     GameObject bag;
+    catfish_behavior catfish_script;
     SpriteRenderer sprite;
     Rigidbody2D rb;
 
@@ -20,6 +21,7 @@ public class shell_behavior : MonoBehaviour
         bag = GameObject.FindWithTag("Bag");
         sprite = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        catfish_script = GameObject.FindWithTag("Catfish").GetComponent<catfish_behavior>();
     }
 
     void Update(){
@@ -37,10 +39,18 @@ public class shell_behavior : MonoBehaviour
             if (dirtiness == 0){
                 sparkle();
             }
+            catfish_script.speed = catfish_script.slow;
         }
         else if (col.tag == "Bag"){
             sprite.enabled = false;
             rb.velocity = new Vector2(0, 0);
+            GameObject.FindWithTag("GameController").GetComponent<game_controller>().collectedShells ++;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col){
+        if (col.tag == "Catfish"){
+            catfish_script.speed = catfish_script.fast;
         }
     }
 

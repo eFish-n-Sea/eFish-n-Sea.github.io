@@ -7,6 +7,8 @@ TagManager:
   - Shell
   - Catfish
   - Bag
+  - Results
+  - Timer
   layers:
   - Default
   - TransparentFX
