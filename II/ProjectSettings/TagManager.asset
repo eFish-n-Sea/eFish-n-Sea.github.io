@@ -49,9 +49,15 @@ TagManager:
   - name: Shells
     uniqueID: 1559686023
     locked: 0
+  - name: Sparkles
+    uniqueID: 721129303
+    locked: 0
   - name: Bag
     uniqueID: 2886956921
     locked: 0
   - name: Catfish
     uniqueID: 3838239441
+    locked: 0
+  - name: Stars
+    uniqueID: 3788637979
     locked: 0

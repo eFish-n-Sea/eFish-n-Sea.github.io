@@ -42,7 +42,7 @@ public class shell_behavior : MonoBehaviour
             catfish_script.speed = catfish_script.slow;
         }
         else if (col.tag == "Bag"){
-            sprite.enabled = false;
+            this.gameObject.SetActive(false);
             rb.velocity = new Vector2(0, 0);
             GameObject.FindWithTag("GameController").GetComponent<game_controller>().collectedShells ++;
         }
@@ -66,6 +66,7 @@ public class shell_behavior : MonoBehaviour
 
     void sparkle(){
         sparkling = true;
+        transform.GetChild(0).gameObject.SetActive(true);
     }
 
     void collect(){

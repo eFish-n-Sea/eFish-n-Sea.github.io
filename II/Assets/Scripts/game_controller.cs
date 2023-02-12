@@ -8,6 +8,7 @@ public class game_controller : MonoBehaviour
     public GameObject[] prefabShells;
     public int shellsPerRow;
     public float genStartX, genStartY, genSpaceX, genSpaceY;
+    public float time3Stars, time2Stars, time1Star;
     GameObject[] shells;
 
     // Start is called before the first frame update
@@ -30,11 +31,9 @@ public class game_controller : MonoBehaviour
 
         shells = GameObject.FindGameObjectsWithTag("Shell");
 
-        List<int> dirtyChoices = new List<int>{2, 1, 4, 4, 10, 5, 6, 8, 6, 7, 7, 9, 8, 9, 10, 7, 4, 2, 4, 5};
-        foreach (GameObject shell in shells){
-            int dirtIndex = Random.Range(0, dirtyChoices.Count);
-            shell.GetComponent<shell_behavior>().dirtiness = dirtyChoices[dirtIndex];
-            dirtyChoices.RemoveAt(dirtIndex);
+        int[] dirtyChoices = new int[] {2, 1, 4, 4, 10, 5, 6, 8, 6, 7, 7, 9, 8, 9, 10, 7, 4, 2, 4, 5};
+        for (int i = 0; i < 20; i++){
+            shells[i].GetComponent<shell_behavior>().dirtiness = dirtyChoices[i];
         }
     }
 
@@ -54,8 +53,19 @@ public class game_controller : MonoBehaviour
     }
 
     void win(){
-        GameObject.FindWithTag("Results").GetComponent<results>().win();
         GameObject.FindWithTag("Catfish").GetComponent<catfish_behavior>().speed = 0;
-        GameObject.FindWithTag("Timer").GetComponent<timer>().win();
+        float time = GameObject.FindWithTag("Timer").GetComponent<timer>().win();
+        StartCoroutine(GameObject.FindWithTag("Results").GetComponent<results>().win(stars(time)));
+    }
+
+    int stars(float time){
+        if (time < time3Stars)
+            return 3;
+        else if (time < time2Stars)
+            return 2;
+        else if (time < time1Star)
+            return 1;
+        else
+            return 0;
     }
 }

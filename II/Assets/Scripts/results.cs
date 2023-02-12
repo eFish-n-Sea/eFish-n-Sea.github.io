@@ -17,7 +17,11 @@ public class results : MonoBehaviour
         
     }
 
-    public void win(){
-        GetComponent<Image>().enabled = true;
+    public IEnumerator win(int stars){
+        GetComponent<Animator>().SetBool("earned", true);
+        for (int i = 0; i < stars && i < 3; i++){
+            yield return new WaitForSeconds(1);
+            transform.GetChild(i).GetComponent<Animator>().SetBool("earned", true);
+        }
     }
 }

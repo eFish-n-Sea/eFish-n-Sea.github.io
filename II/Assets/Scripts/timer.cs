@@ -26,15 +26,16 @@ public class timer : MonoBehaviour
         if (!stopped){
             string fmt = "00";
             time += Time.deltaTime;
-            ms = (int) (((time % 60) * 100) % 100);
+            ms = (int) ((time * 100) % 100);
             seconds = (int) (time % 60);
             minutes = (int) (time / 60);
             stopWatchText.text = "<mspace=0.55em>" + minutes + "</mspace>:<mspace=0.55em>" + seconds.ToString(fmt) + "</mspace>.<mspace=0.55em>" + ms.ToString(fmt);
         }
     }
 
-    public void win(){
+    public float win(){
         stopped = true;
         stopWatchText.enabled = false;
+        return time;
     }
 }
