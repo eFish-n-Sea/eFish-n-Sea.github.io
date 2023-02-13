@@ -1,18 +1,20 @@
 <!DOCTYPE html>
+
 <html lang="en-us">
     <link rel="stylesheet" href="../home.css">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | II</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
 <body>
-<h1 onclick = "location.href='../index.html'">eFish 'n Sea</h1>
-<h3>This is for Redundant Data processing.</h3>
+<h1 onclick = "location.href='index.html'">eFish 'n Sea</h1>
+<h3>This is for Ineffeicent Interation.</h3>
 <p>
-Describes inefficiency caused by repeatedly converting data from one type to another, rather than working with the original data type directly.
+Refers to loops iterating beyond what is necessary to solve the problem or find the necessary value.
 </p>
 <div id="unity-container" class="unity-desktop">
-    <canvas id="unity-canvas" width=1280 height=720></canvas>
+    <canvas id="unity-canvas" width=960 height=600></canvas>
     <div id="unity-loading-bar">
       <div id="unity-logo"></div>
       <div id="unity-progress-bar-empty">
@@ -23,11 +25,10 @@ Describes inefficiency caused by repeatedly converting data from one type to ano
     <div id="unity-footer">
       <div id="unity-webgl-logo"></div>
       <div id="unity-fullscreen-button"></div>
-      <div id="unity-build-title">Frog and Toad</div>
+      <div id="unity-build-title">II</div>
     </div>
   </div>
-
-<script>
+  <script>
     var container = document.querySelector("#unity-container");
     var canvas = document.querySelector("#unity-canvas");
     var loadingBar = document.querySelector("#unity-loading-bar");
@@ -60,14 +61,14 @@ Describes inefficiency caused by repeatedly converting data from one type to ano
     }
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/unity-test.loader.js";
+    var loaderUrl = buildUrl + "/II.loader.js";
     var config = {
-      dataUrl: buildUrl + "/unity-test.data",
-      frameworkUrl: buildUrl + "/unity-test.framework.js",
-      codeUrl: buildUrl + "/unity-test.wasm",
+      dataUrl: buildUrl + "/II.data",
+      frameworkUrl: buildUrl + "/II.framework.js",
+      codeUrl: buildUrl + "/II.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
-      productName: "Frog and Toad",
+      productName: "II",
       productVersion: "1.0",
       showBanner: unityShowBanner,
     };
@@ -97,8 +98,8 @@ Describes inefficiency caused by repeatedly converting data from one type to ano
     } else {
       // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-      canvas.style.width = "1280px";
-      canvas.style.height = "720px";
+      canvas.style.width = "960px";
+      canvas.style.height = "600px";
     }
 
     loadingBar.style.display = "block";
@@ -119,5 +120,6 @@ Describes inefficiency caused by repeatedly converting data from one type to ano
     };
     document.body.appendChild(script);
   </script>
+
 </body>
 </html>
