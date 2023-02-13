@@ -1010,8 +1010,8 @@ MonoBehaviour:
   genStartY: -3
   genSpaceX: 5
   genSpaceY: 3
-  time3Stars: 116
-  time2Stars: 125
+  time3Stars: 118
+  time2Stars: 130
   time1Star: 150
 --- !u!1001 &8814557335339888800
 PrefabInstance:
