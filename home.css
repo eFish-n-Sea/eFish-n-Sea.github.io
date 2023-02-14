@@ -15,6 +15,7 @@ h1{
     background-color: aquamarine;
     font-family: "lucida console";
     border-radius: 10px;
+    cursor: pointer;
 }
 .inefficiency{
     float: left;
@@ -47,4 +48,5 @@ img{
     border-style: outset;
     border-color:darkcyan;
     border-width: 5px;
+    cursor: pointer;
 }
