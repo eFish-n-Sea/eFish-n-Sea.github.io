@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="earlydev.css">
+    <head>
+        <title>Early Development</title>
+    </head>
+    <body>
+        <nav>
+            
+            <a onclick = "location.href='index.html'">Home</a>
+            <a href="About.html">About</a>
+            <a href="EarlyDev.html" class = "active">Early Development</a>
+            <a href="FutureDev.html">Development Plan</a>
+        </nav>
+        <div style="width: 80%; margin: auto;">
+            <ul class="tabs">
+                <li class="tab active" data-tab="tab1">Report Format</li>
+                <li class="tab" data-tab="tab2">Week 1</li>
+                <li class="tab" data-tab="tab3">Week 2</li>
+                <li class="tab" data-tab="tab4">Week 3</li>
+                <li class="tab" data-tab="tab5">Week 4</li>
+                <li class="tab" data-tab="tab6">Week 5</li>
+                <li class="tab" data-tab="tab7">Week 6</li>
+                <li class="tab" data-tab="tab8">Week 7</li>
+                <li class="tab" data-tab="tab9">Week 8</li>
+                <li class="tab" data-tab="tab10">Week 9</li>
+                <li class="tab" data-tab="tab11">Week 10</li>
+                <li class="tab" data-tab="tab12">Week 11</li>
+                <li class="tab" data-tab="tab13">Week 12</li>
+                <li class="tab" data-tab="tab14">Final Document (Before Dev)</li>
+            </ul>
+    
+            <div class="content" data-content="tab1">
+                <p>
+                    This is how our weekly status reports are formated. <br>
+                    <br>
+                    1.	What you did the past week <br>
+                    2.	What you will do next week<br>
+                    3.	A list of action items.<br>
+                    4.	Any issues and risks, and what's being done about them.<br>
+                    ________________________________________<br>
+                    <br>
+                    Ryan Mercadante, Jonathan Morrone, Andrew Quinlan, Vincent Tufo
+                    </p>
+            </div>
+            <div class="content" data-content="tab2">
+                <img src="WeeklyReportImages/2.jpg" class ="solo"/>
+            </div>
+            <div class="content" data-content="tab3">
+                <img src="WeeklyReportImages/3.jpg" class ="solo"/>
+            </div>
+            <div class="content" data-content="tab4">
+                <img src="WeeklyReportImages/4.jpg" class ="solo"/>
+            </div>
+            <div class="content" data-content="tab5">
+                <img src="WeeklyReportImages/5.jpg" class ="solo"/>
+            </div>
+            <div class="content" data-content="tab6">
+                <img src="WeeklyReportImages/6.jpg" class ="solo"/>
+            </div>
+            <div class="content" data-content="tab7">
+                <img src="WeeklyReportImages/7p1.jpg" class ="top"/>
+                <img src="WeeklyReportImages/7p2.jpg"/>
+                <img src="WeeklyReportImages/7p3.jpg" class ="bottom"/>
+            </div>
+            <div class="content" data-content="tab8">
+                <img src="WeeklyReportImages/8p1.jpg" class ="top"/>
+                <img src="WeeklyReportImages/8p2.jpg" class ="bottom"/>
+            </div>
+            <div class="content" data-content="tab9">
+                <img src="WeeklyReportImages/9.jpg" class ="solo"/>
+            </div>
+            <div class="content" data-content="tab10">
+                <img src="WeeklyReportImages/10p1.jpg" class ="top"/>
+                <img src="WeeklyReportImages/10p2.jpg"/>
+                <img src="WeeklyReportImages/10p3.jpg" class ="bottom"/>
+            </div>
+            <div class="content" data-content="tab11">
+                <img src="WeeklyReportImages/11p1.jpg" class ="top"/>
+                <img src="WeeklyReportImages/11p2.jpg"/>
+                <img src="WeeklyReportImages/11p3.jpg" class ="bottom"/>
+            </div>
+            <div class="content" data-content="tab12">
+                <img src="WeeklyReportImages/12.jpg" class ="solo"/>
+            </div>
+            <div class="content" data-content="tab13">
+                <img src="WeeklyReportImages/13.jpg" class ="solo"/>
+            </div>
+            <div class="content" data-content="tab14">
+                <img src="WeeklyReportImages/Copy of Game Flows-1.jpg" class ="top"/>
+                <img src="WeeklyReportImages/Copy of Game Flows-2.jpg"/>
+                <img src="WeeklyReportImages/Copy of Game Flows-3.jpg"/>
+                <img src="WeeklyReportImages/Copy of Game Flows-4.jpg"/>
+                <img src="WeeklyReportImages/Copy of Game Flows-5.jpg"/>
+                <img src="WeeklyReportImages/Copy of Game Flows-6.jpg"/>
+                <img src="WeeklyReportImages/Copy of Game Flows-7.jpg" class ="bottom"/>
+            </div>
+        </div>
+        
+        <script>
+            tabcontent = document.getElementsByClassName("content");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+             }
+            // get all tabs and content elements
+            const tabs = document.querySelectorAll('.tab');
+            const content = document.querySelectorAll('.content');
+        
+            // add click event listeners to the tabs
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].addEventListener('click', function() {
+                    // remove the active class from all tabs and content elements
+                    for (let j = 0; j < tabs.length; j++) {
+                        tabs[j].classList.remove('active');
+                        content[j].style.display = 'none';
+                    }
+                    // add the active class to the clicked tab and display its content
+                    this.classList.add('active');
+                    document.querySelector('[data-content="' + this.dataset.tab + '"]').style.display = 'block';
+                });
+            }
+            tabs[0].classList.add('active');
+	        content[0].style.display = 'block';
+        </script>
+    </body>
+</html>
