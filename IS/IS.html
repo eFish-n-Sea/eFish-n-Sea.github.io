@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en-us">
     <link rel="stylesheet" href="../home.css">
     <meta charset="utf-8">
@@ -7,11 +8,18 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
 <body>
-<h1 onclick = "location.href='../index.html'">eFish 'n Sea</h1>
+ <nav>
+		<a onclick = "location.href='index.html'">Home</a>
+        <a href="About.html">About</a>
+        <a href="EarlyDev.html">Early Development</a>
+        <a href="FutureDev.html">Development Plan</a>
+	</nav>
+
 <h3>This is for Inefficent Syncronization.</h3>
 <p>
 Refers to inefficiency resulting from different threads in multithreaded applications needing to wait for each other.
 </p>
+
 <div id="unity-container" class="unity-desktop">
   <canvas id="unity-canvas" width=960 height=600></canvas>
   <div id="unity-loading-bar">
@@ -119,5 +127,6 @@ Refers to inefficiency resulting from different threads in multithreaded applica
   };
   document.body.appendChild(script);
 </script>
+
 </body>
 </html>
