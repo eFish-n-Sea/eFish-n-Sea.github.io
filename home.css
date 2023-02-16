@@ -14,8 +14,18 @@ body
 
 }
 
-.inefficiency
-{
+h1{
+    border-width: 5px;
+    border-color: aquamarine;
+    border-style: outset;
+    width: 200px;
+    text-align: center;
+    background-color: aquamarine;
+    font-family: "lucida console";
+    border-radius: 10px;
+    cursor: pointer;
+}
+.inefficiency{
     float: left;
     width:250px;
      text-align: center;
@@ -53,6 +63,7 @@ img
     border-style: outset;
     border-color:darkcyan;
     border-width: 5px;
+    cursor: pointer;
 }
 
 nav 
@@ -84,4 +95,6 @@ nav .active
 {
     background-color: #4CAF50;
     color: white;
+    cursor: pointer;
+
 }
