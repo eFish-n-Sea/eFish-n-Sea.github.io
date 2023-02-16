@@ -5,11 +5,13 @@ body
 #gamesHost
 {
     display: flex;
-    align-items: center;
+    align-items: top;
     flex-wrap: wrap;
     max-width: 1200px;
     justify-content: center;
     margin: auto;
+    padding-top: 50px;
+
 }
 
 h1{
