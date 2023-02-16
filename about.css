@@ -2,57 +2,42 @@ body
 {
     background-image: url("images/BackgroundNEW.png");
 }
-#gamesHost
-{
+
+.container {
+    margin-top: 10px;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
     justify-content: center;
-    margin: auto;
+    align-items: center;
+    background-color: #F6E7EA;
+    border-radius: 25px;
+    padding: 0px;
+    max-width: 600px;
+  }
+.doublecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+  
+  .text {
+    max-width: 500px;
+    text-align: center;
+    padding: 25px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+  
+  p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
 
-.inefficiency
-{
-    float: left;
-    width:250px;
-     text-align: center;
-    /*display: flex; */
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-}
-
-#unity-container
-{
-    margin-top: 100px;
-}
-
-a
-{
-   color: aliceblue;
-   text-decoration: solid;
-   font-family: "lucida console";
-}
-
-p
-{
-    color:aliceblue;
-}
-
-h3
-{
-    color:aliceblue;
-}
-
-img
-{
-    border-radius: 10px;
-    border-style: outset;
-    border-color:darkcyan;
-    border-width: 5px;
-}
-
+/*NAV BAR*/
 nav 
 {
     background-color: #333;
