@@ -1,6 +1,6 @@
 body
 {
-    background-image: url("images/BackgroundNEW.png");
+    background-image: url("../images/BackgroundNEW.png");
 }
 
 .tabs {
@@ -106,8 +106,10 @@ nav a:hover
 }
 
 /* Add a color to the active/current link */
-nav .active 
-{
-    background-color: #4CAF50;
-    color: white;
-}
+ #edev
+            {
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+
+            }

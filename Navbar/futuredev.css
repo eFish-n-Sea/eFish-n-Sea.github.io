@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/BackgroundNEW.png");
+    background-image: url("../images/BackgroundNEW.png");
   }
 
 
@@ -29,7 +29,7 @@ nav a:hover
 }
 
 /* Add a color to the active/current link */
-nav .active 
+#devplan
 {
     background-color: #4CAF50;
     color: white;

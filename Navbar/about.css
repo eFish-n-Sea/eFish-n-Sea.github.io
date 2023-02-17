@@ -65,7 +65,7 @@ nav a:hover
 }
 
 /* Add a color to the active/current link */
-nav .active 
+#about
 {
     background-color: #4CAF50;
     color: white;
