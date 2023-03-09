@@ -10,6 +10,7 @@
     <script src="../components/navbar-nav.js" type="text/javascript" defer></script>
   </head>
     <body>
+        <nav-bar></nav-bar>
         <div id="unity-container" class="unity-desktop">
             <canvas id="unity-canvas" width=960 height=540></canvas>
             <div id="unity-loading-bar">
@@ -22,7 +23,7 @@
             <div id="unity-footer">
               <div id="unity-webgl-logo"></div>
               <div id="unity-fullscreen-button"></div>
-              <div id="unity-build-title">IS</div>
+              <div id="unity-build-title">IDS</div>
             </div>
           </div>
           <script>
@@ -58,14 +59,14 @@
             }
       
             var buildUrl = "Build";
-            var loaderUrl = buildUrl + "/IS.loader.js";
+            var loaderUrl = buildUrl + "/IDS.loader.js";
             var config = {
-              dataUrl: buildUrl + "/IS.data",
-              frameworkUrl: buildUrl + "/IS.framework.js",
-              codeUrl: buildUrl + "/IS.wasm",
+              dataUrl: buildUrl + "/IDS.data",
+              frameworkUrl: buildUrl + "/IDS.framework.js",
+              codeUrl: buildUrl + "/IDS.wasm",
               streamingAssetsUrl: "StreamingAssets",
               companyName: "DefaultCompany",
-              productName: "IS",
+              productName: "IDS",
               productVersion: "1.0",
               showBanner: unityShowBanner,
             };
