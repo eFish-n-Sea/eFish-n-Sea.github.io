@@ -1,17 +1,24 @@
 <!DOCTYPE html>
+
 <html lang="en-us">
-    <link rel="stylesheet" href="../home.css">
+    <link rel="stylesheet" href="../../home.css">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | IS</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="../components/navbar-nav.js" type="text/javascript" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <body>
-  <nav-bar></nav-bar>
-<!-- <h3>This is for Redundant Data processing.</h3>
+<!-- NAVIGATION | Does not need to be altered to change nav bar styles or elements -->
+<div id="nav-placeholder">
+</div>
+<script src="../../Navbar/navbar.js"></script>
+<!-- NAVIGATION END -->
+<!-- <h3>This is for Inefficent Syncronization.</h3>
 <p>
-Describes inefficiency caused by repeatedly converting data from one type to another, rather than working with the original data type directly.
+Refers to inefficiency resulting from different threads in multithreaded applications needing to wait for each other.
 </p> -->
+
 <div id="unity-container" class="unity-desktop">
   <canvas id="unity-canvas" width=960 height=600></canvas>
   <div id="unity-loading-bar">
@@ -24,7 +31,7 @@ Describes inefficiency caused by repeatedly converting data from one type to ano
   <div id="unity-footer">
     <div id="unity-webgl-logo"></div>
     <div id="unity-fullscreen-button"></div>
-    <div id="unity-build-title">My project</div>
+    <div id="unity-build-title">IS</div>
   </div>
 </div>
 <script>
@@ -60,14 +67,14 @@ Describes inefficiency caused by repeatedly converting data from one type to ano
   }
 
   var buildUrl = "Build";
-  var loaderUrl = buildUrl + "/RDP.loader.js";
+  var loaderUrl = buildUrl + "/IS.loader.js";
   var config = {
-    dataUrl: buildUrl + "/RDP.data",
-    frameworkUrl: buildUrl + "/RDP.framework.js",
-    codeUrl: buildUrl + "/RDP.wasm",
+    dataUrl: buildUrl + "/IS.data",
+    frameworkUrl: buildUrl + "/IS.framework.js",
+    codeUrl: buildUrl + "/IS.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DefaultCompany",
-    productName: "My project",
+    productName: "IS",
     productVersion: "1.0",
     showBanner: unityShowBanner,
   };
@@ -98,7 +105,7 @@ Describes inefficiency caused by repeatedly converting data from one type to ano
     // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
     canvas.style.width = "960px";
-    canvas.style.height = "600px";
+    canvas.style.height = "540px";
   }
 
   loadingBar.style.display = "block";
@@ -119,5 +126,5 @@ Describes inefficiency caused by repeatedly converting data from one type to ano
   };
   document.body.appendChild(script);
 </script>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSemdoQz0jGZrGFw69aDivLPfF_caBkcmglXJG4_beRvmSTW-w/viewform?embedded=true" width="640" height="1322" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></body>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeyLt9Ko_Ih7QC1Q0ab0FWZZeX8wa2RGnUjNRsGUR7qFtLaaQ/viewform?embedded=true" width="640" height="1322" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></body>
 </html>

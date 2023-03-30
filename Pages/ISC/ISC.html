@@ -3,11 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | My project</title>
+    <title>Unity WebGL Player | ISC</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-  </head>
-  <body>
+  
+    <link rel="stylesheet" href="../../home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- NAVIGATION | Does not need to be altered to change nav bar styles or elements -->
+<div id="nav-placeholder">
+</div>
+<script src="../../Navbar/navbar.js"></script>
+<!-- NAVIGATION END -->  
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -20,7 +28,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">My project</div>
+        <div id="unity-build-title">ISC</div>
       </div>
     </div>
     <script>
@@ -56,14 +64,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/RDP.loader.js";
+      var loaderUrl = buildUrl + "/ISC.loader.js";
       var config = {
-        dataUrl: buildUrl + "/RDP.data",
-        frameworkUrl: buildUrl + "/RDP.framework.js",
-        codeUrl: buildUrl + "/RDP.wasm",
+        dataUrl: buildUrl + "/ISC.data",
+        frameworkUrl: buildUrl + "/ISC.framework.js",
+        codeUrl: buildUrl + "/ISC.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "My project",
+        productName: "ISC",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -115,5 +123,5 @@
       };
       document.body.appendChild(script);
     </script>
-  </body>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctXxSj8A5E7RaltpgUG5-xnJajDhzJ1DbuIUIjWBHYAjuBNQ/viewform?embedded=true" width="640" height="1322" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  </body>
 </html>

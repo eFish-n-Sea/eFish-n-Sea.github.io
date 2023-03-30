@@ -6,11 +6,15 @@
         <!-- <title>Unity WebGL Player | IDS</title> -->
         <link rel="shortcut icon" href="TemplateData/favicon.ico">
         <link rel="stylesheet" href="TemplateData/style.css">
-        <link rel="stylesheet" href="../home.css">
-        <script src="../components/navbar-nav.js" type="text/javascript" defer></script>
+        <link rel="stylesheet" href="../../home.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       </head>
     <body>
-        <nav-bar></nav-bar>
+      <!-- NAVIGATION | Does not need to be altered to change nav bar styles or elements -->
+      <div id="nav-placeholder">
+      </div>
+      <script src="../../Navbar/navbar.js"></script>
+      <!-- NAVIGATION END -->
         <div id="unity-container" class="unity-desktop">
             <canvas id="unity-canvas" width=960 height=540></canvas>
             <div id="unity-loading-bar">
