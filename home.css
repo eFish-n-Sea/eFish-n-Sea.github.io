@@ -1,13 +1,24 @@
-body
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body
 {
    /* background-image: url("images/Background/water.png"); */
     background-color: #3AD6FF;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
     z-index: -3;
+    height: 100%;
+}
+#main
+{
+    overflow: auto;
+    padding-bottom: 230px;
+    min-height: 100%;
+    margin-top: -325px;
 }
 
-#gamesHost
+#gamesHost /*container*/
 {
     display: flex;
     align-items: top;
@@ -17,7 +28,6 @@ body
     margin: auto;
     padding-top: 50px;
     margin-top: 50px;
-
 }
 
 .inefficiency{
@@ -28,12 +38,6 @@ body
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 25px;
-}
-
-#unity-container
-{
-    /* margin-top: 100px; */
-    padding-top: 50px;
 }
 
 a
@@ -63,7 +67,7 @@ img
 }
 
 #foam{
-    position: fixed;
+    position: relative;
     background-image: url("images/Background/foam.png");
     background-repeat: repeat-x;
     top:0;
@@ -72,23 +76,13 @@ img
     z-index: -2;
     height: 320px;
 }
-/* this doesnt work as intended yet for some reason */
+
 #sand1{
-    position: fixed;
+    position: relative;
     background-image: url("images/Background/sand1.png");
     background-repeat: repeat-x;
     height: 230px;
-    bottom: 0;
-    left:0;
-    right:0;
+    margin-top: -230px;
+    clear: both;
     z-index: -2;
-}
-
-
-iframe
-{
-   padding-top: 750px;
-   display:block;
-   margin-left: auto;
-   margin-right: auto;
 }

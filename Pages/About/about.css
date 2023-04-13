@@ -1,6 +1,13 @@
-body
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body
 {
-    background-image: url("../../images/BackgroundNEW.png");
+    background-color: #3AD6FF;
+    position: relative;
+    z-index: -3;
+    height: 100%;
 }
 
 .container {
@@ -10,7 +17,9 @@ body
     align-items: center;
     background-color: #F6E7EA;
     border-radius: 25px;
-    padding: 0px;
+    padding: 10px;
+    min-width: 800px;
+    max-height: 30%;
     max-width: 80%;
     max-height: 80%;
   }
@@ -18,55 +27,147 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -500px;
+    min-height: 100%;
 }
   
-  .text {
-    max-width: 80%;
-    max-height: 80%;
-    text-align: center;
-    padding: 25px;
-  }
-  
-  h1 {
-    font-size: xx-large;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-top: 0px;
-  }
-  
-  p {
-    font-size: larger;
-    line-height: 1.5;
-  }
-
-/*NAV BAR*/
-nav 
-{
-    background-color: #333;
-    overflow: hidden;
+.text {
+  max-width: 80%;
+  max-height: 80%;
+  text-align: center;
+  padding: 25px;
 }
 
-/* Style the links inside the navigation bar */
-nav a 
-{
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+h1 {
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
-/* Change the color of links on hover */
-nav a:hover 
-{
-    background-color: #ddd;
-    color: black;
+p1 {
+  font-size: larger;
+  line-height: 1.5;
 }
 
-/* Add a color to the active/current link */
-#about
-{
-    background-color: #4CAF50;
-    color: white;
+#foam{
+  position: relative;
+  background-image: url("../../images/Background/foam.png");
+  background-repeat: repeat-x;
+  /* top:0;
+  left:0;
+  right: 0; */
+  z-index: -2;
+  height: 320px;
+  clear: both;
+}
+
+#sand1{
+  position: relative;
+  background-image: url("../../images/Background/sand1.png");
+  background-repeat: repeat-x;
+  height: 230px;
+  margin-top: -230px;
+  clear: both;
+  z-index: -2;
+}
+
+:root {
+  --purple: hsl(240, 80%, 89%);
+  --pink: hsl(0, 59%, 94%);
+  --light-bg: hsl(204, 37%, 92%);
+  --light-gray-bg: hsl(0, 0%, 94%);
+  --white: hsl(0, 0%, 100%);
+  --dark: hsl(0, 0%, 7%);
+  --text-gray: hsl(0, 0%, 30%);
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--text-gray);
+}
+
+.description {
+  white-space: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrap {
+  margin-top: -200px;
+  display: flex;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 230px;
+}
+
+/* still working on this part
+ @media (min-width: 0px) {
+  .wrap {
+    width: 500px;
+  }
+}
+@media (min-width: 890px) {
+  .wrap {
+    width: 1000px;
+  }
+}
+@media (min-width: 1609px) {
+  .wrap {
+    width: 100%;
+  }
+} */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 24px;
+  background: #fff;
+  float: left;
+  width:300px;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.box-top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 12px;
+}
+
+.box-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-title {
+  border-left: 3px solid var(--purple);
+  padding-left: 12px;
+}
+
+.user-follow-info {
+  color: hsl(0, 0%, 60%);
 }
