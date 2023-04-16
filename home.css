@@ -14,7 +14,6 @@ html, body
     overflow: auto;
     padding-bottom: 369px;
     min-height: 100%;
-    margin-top: -325px;
 }
 
 #gamesHost /*container*/
@@ -39,6 +38,15 @@ html, body
     margin-bottom: 25px;
 }
 
+.thumbnail
+{
+    border-radius: 10px;
+    border-style: outset;
+    border-color:darkcyan;
+    border-width: 5px;
+    cursor: pointer;
+}
+
 a
 {
    color: aliceblue;
@@ -56,14 +64,7 @@ h3
     color:aliceblue;
 }
 
-img
-{
-    border-radius: 10px;
-    border-style: outset;
-    border-color:darkcyan;
-    border-width: 5px;
-    cursor: pointer;
-}
+
 
 #foam{
     position: relative;
@@ -73,7 +74,7 @@ img
     left:0;
     right: 0;
     z-index: -2;
-    height: 320px;
+    height: 604px;
     margin-top: -50px;
 }
 
@@ -85,4 +86,14 @@ img
     margin-top: -369px;
     clear: both;
     z-index: -2;
+}
+
+#logo {
+    margin-top: -450px;
+    display: flex;
+    position: relative;
+    height: 66px;
+    z-index: 1;
+    align-content: flex-start;
+    justify-content: center;
 }

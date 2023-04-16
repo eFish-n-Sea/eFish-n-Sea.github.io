@@ -27,7 +27,7 @@ html, body
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -500px;
+    margin-top: -750px;
     min-height: 100%;
 }
   
@@ -55,7 +55,7 @@ p1 {
   background-image: url("../../images/Background/foam.png");
   background-repeat: repeat-x;
   z-index: -2;
-  height: 320px;
+  height: 604px;
   clear: both;
   margin-top: -50px;
 }
