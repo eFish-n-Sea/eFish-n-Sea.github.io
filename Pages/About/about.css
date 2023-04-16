@@ -54,20 +54,18 @@ p1 {
   position: relative;
   background-image: url("../../images/Background/foam.png");
   background-repeat: repeat-x;
-  /* top:0;
-  left:0;
-  right: 0; */
   z-index: -2;
   height: 320px;
   clear: both;
+  margin-top: -50px;
 }
 
 #sand1{
   position: relative;
   background-image: url("../../images/Background/sand1.png");
   background-repeat: repeat-x;
-  height: 230px;
-  margin-top: -230px;
+  height: 369px;
+  margin-top: -369px;
   clear: both;
   z-index: -2;
 }
@@ -103,17 +101,21 @@ a {
   color: inherit;
 }
 
+.wrap-container {
+  display: flex;
+  justify-content: center;
+}
 .wrap {
   margin-top: -200px;
   display: flex;
   align-items: top;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 230px;
+  margin-bottom:369px;
 }
 
-/* still working on this part
- @media (min-width: 0px) {
+
+@media (min-width: 0px) {
   .wrap {
     width: 500px;
   }
@@ -127,7 +129,7 @@ a {
   .wrap {
     width: 100%;
   }
-} */
+}
 
 .box {
   display: flex;
@@ -159,8 +161,8 @@ a {
 
 .title-flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  text-align: left;
 }
 
 .box-title {
@@ -170,4 +172,8 @@ a {
 
 .user-follow-info {
   color: hsl(0, 0%, 60%);
+}
+
+.description {
+  text-align: left;
 }

@@ -4,7 +4,6 @@
 }
 html, body
 {
-   /* background-image: url("images/Background/water.png"); */
     background-color: #3AD6FF;
     position: relative;
     z-index: -3;
@@ -13,7 +12,7 @@ html, body
 #main
 {
     overflow: auto;
-    padding-bottom: 230px;
+    padding-bottom: 369px;
     min-height: 100%;
     margin-top: -325px;
 }
@@ -75,14 +74,15 @@ img
     right: 0;
     z-index: -2;
     height: 320px;
+    margin-top: -50px;
 }
 
 #sand1{
     position: relative;
     background-image: url("images/Background/sand1.png");
     background-repeat: repeat-x;
-    height: 230px;
-    margin-top: -230px;
+    height: 369px;
+    margin-top: -369px;
     clear: both;
     z-index: -2;
 }
