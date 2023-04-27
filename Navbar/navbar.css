@@ -29,6 +29,7 @@ nav .active {
 .dropdown {
 float: left;
 overflow: hidden;
+z-index: 3;
 }
 
 .dropdown .dropbtn {
@@ -39,11 +40,13 @@ color: white;
 padding: 14px 16px;
 background-color: inherit;
 font-family: "lucida console";
+z-index: 3;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
 background-color: #ddd;
 color: black;
+z-index: 3;
 }
 
 .dropdown-content {
@@ -51,7 +54,7 @@ display: none;
 position: absolute;
 background-color: #f9f9f9;
 min-width: 160px;
-z-index: 1;
+z-index: 3;
 }
 
 .dropdown-content a {
@@ -61,10 +64,12 @@ padding: 12px 16px;
 text-decoration: none;
 display: block;
 text-align: left;
+z-index: 3;
 }
 
 .dropdown:hover .dropdown-content {
 display: block;
+z-index: 3;
 }
 
 .dropbtn.active{
