@@ -177,3 +177,8 @@ a {
 .description {
   text-align: left;
 }
+
+#survey {
+  text-align: center;
+  font-size: x-large;
+}
