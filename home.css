@@ -97,3 +97,7 @@ h3
     align-content: flex-start;
     justify-content: center;
 }
+
+#survey {
+    align-self: center;
+}
