@@ -59,10 +59,11 @@ p
     color:aliceblue;
 }
 
-h3
+h3,h2
 {
     color:aliceblue;
 }
+
 
 
 
@@ -99,5 +100,5 @@ h3
 }
 
 #survey {
-    align-self: center;
+    text-align: center;
 }
